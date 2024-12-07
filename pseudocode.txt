@@ -1,0 +1,11 @@
+both people take stance
+both throw a stance that could be either rock, scissors, and paper
+
+if rock is against scissors then it wins 
+if it against paper then it losses otherwise tie
+
+if scissors is against paper then it wins 
+if it against rock then it losses otherwise tie
+
+if paper is against rock then it wins 
+if it against scissors then it losses otherwise tie
