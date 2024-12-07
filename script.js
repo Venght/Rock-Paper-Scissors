@@ -14,6 +14,17 @@ function getComputerChoice(rstance, pstance, sstance) {
         console.log(sstance);
     }
     return;
+
 }
+
+function getHumanChoice(){
+    let choice = prompt("Rock, Paper, Scissors?");
+    //console.log(choice);
+    return choice;
+}
+
+let userChoice = getHumanChoice();
+//typeof userChoice
+console.log("You chose: " , userChoice);
 
 getComputerChoice("Rock", "Paper", "Scissors")
