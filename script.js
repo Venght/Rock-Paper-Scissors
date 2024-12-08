@@ -23,11 +23,14 @@ function getHumanChoice(){
     return choice;
 }
 
+function playRound(humanScore, computerScore) {
+
+
+}
+
 const humanScore = 0;
 const computerScore = 0;
 
 let userChoice = getHumanChoice();
-//typeof userChoice
 console.log("You chose: " , userChoice);
-
 getComputerChoice("Rock", "Paper", "Scissors")
