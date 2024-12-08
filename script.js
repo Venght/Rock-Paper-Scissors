@@ -23,6 +23,9 @@ function getHumanChoice(){
     return choice;
 }
 
+const humanScore = 0;
+const computerScore = 0;
+
 let userChoice = getHumanChoice();
 //typeof userChoice
 console.log("You chose: " , userChoice);
