@@ -1,3 +1,8 @@
+let humanScore = 0;
+let computerScore = 0;
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice("rock", "paper", "scissors");
 
 function getComputerChoice(rstance, pstance, sstance) {
     let x = Math.floor(Math.random()* 3) + 1;
@@ -19,18 +24,15 @@ function getComputerChoice(rstance, pstance, sstance) {
 
 function getHumanChoice(){
     let choice = prompt("Rock, Paper, Scissors?");
-    //console.log(choice);
+    choice = choice.toLowerCase();
     return choice;
 }
 
-function playRound(humanScore, computerScore) {
-
-
+function playRound(HumanChoice, ComputerChoice) {
+    console.log("Your score is: " + humanScore + " The enemy score is: " + computerScore);
+    return;
 }
 
-const humanScore = 0;
-const computerScore = 0;
+playRound(humanSelection, computerSelection);
+console.log("You chose: " , humanSelection);
 
-let userChoice = getHumanChoice();
-console.log("You chose: " , userChoice);
-getComputerChoice("Rock", "Paper", "Scissors")
