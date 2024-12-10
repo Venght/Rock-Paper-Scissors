@@ -1,12 +1,11 @@
 let humanScore = 0;
 let computerScore = 0;
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice("rock", "paper", "scissors");
+//const humanSelection = getHumanChoice();
+//const computerSelection = getComputerChoice("rock", "paper", "scissors");
 
 function getComputerChoice(rstance, pstance, sstance) {
   let x = Math.floor(Math.random() * 3) + 1;
-  //console.log(x);
   if (x === 1) {
     choice = rstance;
   } else if (x === 2) {
@@ -14,7 +13,7 @@ function getComputerChoice(rstance, pstance, sstance) {
   } else if (x === 3) {
     choice = sstance;
   }
-  console.log(`Computer choice: ${choice}`)
+  console.log(`Computer choice: ${choice}`);
   return choice;
 }
 
@@ -25,7 +24,7 @@ function getHumanChoice() {
 }
 
 function playRound(HumanChoice, ComputerChoice) {
-  console.log("Your score is: " + humanScore + " The enemy score is: " + computerScore);
+ 
   if (
     (HumanChoice == "rock" && ComputerChoice == "scissors") ||
     (HumanChoice == "paper" && ComputerChoice == "rock") ||
@@ -33,7 +32,6 @@ function playRound(HumanChoice, ComputerChoice) {
   ) {
     console.log("You won");
     humanScore++;
-    
   } else if (
     (ComputerChoice == "rock" && HumanChoice == "scissors") ||
     (ComputerChoice == "paper" && HumanChoice == "rock") ||
@@ -44,12 +42,23 @@ function playRound(HumanChoice, ComputerChoice) {
   } else {
     console.log("Both are tie");
   }
+
+  console.log(
+    "Your score is: " + humanScore + " The enemy score is: " + computerScore
+  );
   return;
 }
 
-function playGame(){
-    
+function playGame() {
+
+  for (let i = 0; i < 5; i++) {
+    console.log(`Start of round ${i+1}`);
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice("rock", "paper", "scissors");
+    playRound(humanSelection, computerSelection);
+    console.log(`End of round ${i+1}`);
+  }
 }
 
-playRound(humanSelection, computerSelection);
-console.log("You chose: ", humanSelection);
+playGame();
+
