@@ -1,0 +1,11 @@
+.selection  {
+    text-align: center;
+}
+
+.selection button {
+    font-size: 20px;
+    margin-top: 200px;
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 7px;
+}

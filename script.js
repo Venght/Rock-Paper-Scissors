@@ -18,7 +18,7 @@ function getComputerChoice(rstance, pstance, sstance) {
 }
 
 function getHumanChoice() {
-  let choice = prompt("Rock, Paper, Scissors?");
+  let choice = [rockBtn, paperBtn, scissorsBtn]
   choice = choice.toLowerCase();
   return choice;
 }
@@ -49,7 +49,9 @@ function playRound(HumanChoice, ComputerChoice) {
   return;
 }
 
-function playGame() {
+playRound()
+
+/*function playGame() {
 
   for (let i = 0; i < 5; i++) {
     console.log(`Start of round ${i+1}`);
@@ -60,5 +62,19 @@ function playGame() {
   }
 }
 
-playGame();
+playGame();*/
+const rockBtn = document.getElementById("rock")
+rockBtn.addEventListener("click", function(event) {
+  console.log("rock");
+})
+
+const paperBtn = document.getElementById("paper")
+paperBtn.addEventListener("click", function(event) {
+  console.log("paper");
+})
+
+const scissorsBtn = document.getElementById("scissors")
+scissorsBtn.addEventListener("click", function(event) {
+  console.log("scissors");
+})
 

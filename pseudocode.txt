@@ -9,3 +9,13 @@ if it against rock then it losses otherwise tie
 
 if paper is against rock then it wins 
 if it against scissors then it losses otherwise tie
+
+Play round ( getHumanChoice,  getComputerChoice) {
+    - launch get human input () -- launch get computer input () 
+    -- if human = rock --- --- 
+    if computer = rock --- --- --- 
+    return tie --- --- 
+    else if computer = paper --- --- 
+    return human wins ....... 
+    So on for all cases
+}
