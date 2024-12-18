@@ -1,11 +1,40 @@
-.selection  {
+.body {
     text-align: center;
+    justify-content: center;
 }
-
-.selection button {
+#selection {
     font-size: 20px;
-    margin-top: 200px;
+    text-align: center;
+    margin: 0 20px;
     padding: 10px;
     background-color: bisque;
     border-radius: 7px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container button {
+    background-color: lightblue; 
+    color: black; 
+    border: 2px solid black; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 40px; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+#result {
+    text-align: center;
+    margin-top: 40px;
+    font-size: xx-large;
+    font-weight: 800;
+    color: blue;
+}
+
+.score {
+    text-align: center;
+    font-size: larger;
 }
