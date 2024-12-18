@@ -1,7 +1,4 @@
-.body {
-    text-align: center;
-    justify-content: center;
-}
+
 #selection {
     font-size: 20px;
     text-align: center;
@@ -37,4 +34,14 @@
 .score {
     text-align: center;
     font-size: larger;
+}
+
+.choices {
+    display: flex;
+    text-align: center;
+    font-size: 50px;
+    gap: 80px;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
 }
